@@ -1,4 +1,4 @@
-ename: getto Tarafından Yapılmıştır discord.io/getto
+name: arda Tarafından Yapılmıştır discord.io/getto
 on: 
   workflow_dispatch:
 defaults:
@@ -7,7 +7,7 @@ defaults:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
     - name: getto Tarafından Yapılmıştır
@@ -16,5 +16,5 @@ jobs:
       run: source setup.sh "denene31" "denene31" "$NGROK_AUTH_TOKEN"
     - name: getto Tarafından Yapılmıştır
       run: curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'
-    - name: getto Tarafından Yapılmıştır
+    - name: arda Tarafından Yapılmıştır
       uses: mxschmitt/action-tmate@v2
