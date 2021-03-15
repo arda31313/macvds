@@ -1,4 +1,4 @@
-name: getto Tarafından Yapılmıştır discord.io/getto
+ename: getto Tarafından Yapılmıştır discord.io/getto
 on: 
   workflow_dispatch:
 defaults:
@@ -7,13 +7,13 @@ defaults:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
     - name: getto Tarafından Yapılmıştır
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-      run: source setup.sh "GettoVDS!12" "GettoVDS!12" "$NGROK_AUTH_TOKEN"
+      run: source setup.sh "denene31" "denene31" "$NGROK_AUTH_TOKEN"
     - name: getto Tarafından Yapılmıştır
       run: curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'
     - name: getto Tarafından Yapılmıştır
